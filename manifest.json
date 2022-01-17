@@ -62,15 +62,15 @@
       }
     },
     "arrow": {
-      "Source": "AWS",
-      "Repository": "https://arrow-r-nightly.s3.amazonaws.com",
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/focal/latest",
       "description": {
         "Package": "arrow",
         "Title": "Integration to 'Apache' 'Arrow'",
-        "Version": "6.0.1.20211228",
+        "Version": "6.0.1.20220116",
         "Authors@R": "c(\n    person(\"Neal\", \"Richardson\", email = \"neal@ursalabs.org\", role = c(\"aut\", \"cre\")),\n    person(\"Ian\", \"Cook\", email = \"ianmcook@gmail.com\", role = c(\"aut\")),\n    person(\"Nic\", \"Crane\", email = \"thisisnic@gmail.com\", role = c(\"aut\")),\n    person(\"Jonathan\", \"Keane\", email = \"jkeane@gmail.com\", role = c(\"aut\")),\n    person(\"Romain\", \"Fran\\u00e7ois\", email = \"romain@rstudio.com\", role = c(\"aut\"), comment = c(ORCID = \"0000-0002-2444-4226\")),\n    person(\"Jeroen\", \"Ooms\", email = \"jeroen@berkeley.edu\", role = c(\"aut\")),\n    person(\"Javier\", \"Luraschi\", email = \"javier@rstudio.com\", role = c(\"ctb\")),\n    person(\"Karl\", \"Dunkle Werner\", email = \"karldw@users.noreply.github.com\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0003-0523-7309\")),\n    person(\"Jeffrey\", \"Wong\", email = \"jeffreyw@netflix.com\", role = c(\"ctb\")),\n    person(\"Apache Arrow\", email = \"dev@arrow.apache.org\", role = c(\"aut\", \"cph\"))\n  )",
         "Description": "'Apache' 'Arrow' <https://arrow.apache.org/> is a cross-language\n    development platform for in-memory data. It specifies a standardized\n    language-independent columnar memory format for flat and hierarchical data,\n    organized for efficient analytic operations on modern hardware. This\n    package provides an interface to the 'Arrow C++' library.",
-        "Depends": "R (>= 3.3)",
+        "Depends": "R (>= 3.4)",
         "License": "Apache License (>= 2.0)",
         "URL": "https://github.com/apache/arrow/, https://arrow.apache.org/docs/r/",
         "BugReports": "https://issues.apache.org/jira/projects/ARROW/issues",
@@ -84,12 +84,13 @@
         "Config/testthat/edition": "3",
         "VignetteBuilder": "knitr",
         "Suggests": "DBI, dbplyr, decor, distro, dplyr, duckdb (>= 0.2.8), hms,\nknitr, lubridate, pkgload, reticulate, rmarkdown, stringi,\nstringr, testthat (>= 3.1.0), tibble, withr",
-        "Collate": "'arrowExports.R' 'enums.R' 'arrow-package.R' 'type.R'\n'array-data.R' 'arrow-datum.R' 'array.R' 'arrow-tabular.R'\n'buffer.R' 'chunked-array.R' 'io.R' 'compression.R' 'scalar.R'\n'compute.R' 'config.R' 'csv.R' 'dataset.R' 'dataset-factory.R'\n'dataset-format.R' 'dataset-partition.R' 'dataset-scan.R'\n'dataset-write.R' 'deprecated.R' 'dictionary.R'\n'dplyr-arrange.R' 'dplyr-collect.R' 'dplyr-count.R'\n'dplyr-distinct.R' 'dplyr-eval.R' 'dplyr-filter.R'\n'expression.R' 'dplyr-functions.R' 'dplyr-group-by.R'\n'dplyr-join.R' 'dplyr-mutate.R' 'dplyr-select.R'\n'dplyr-summarize.R' 'record-batch.R' 'table.R' 'dplyr.R'\n'duckdb.R' 'feather.R' 'field.R' 'filesystem.R' 'flight.R'\n'install-arrow.R' 'ipc_stream.R' 'json.R' 'memory-pool.R'\n'message.R' 'metadata.R' 'parquet.R' 'python.R'\n'query-engine.R' 'record-batch-reader.R'\n'record-batch-writer.R' 'reexports-bit64.R'\n'reexports-tidyselect.R' 'schema.R' 'util.R'",
+        "LinkingTo": "cpp11 (>= 0.4.2)",
+        "Collate": "'arrowExports.R' 'enums.R' 'arrow-package.R' 'type.R'\n'array-data.R' 'arrow-datum.R' 'array.R' 'arrow-tabular.R'\n'buffer.R' 'chunked-array.R' 'io.R' 'compression.R' 'scalar.R'\n'compute.R' 'config.R' 'csv.R' 'dataset.R' 'dataset-factory.R'\n'dataset-format.R' 'dataset-partition.R' 'dataset-scan.R'\n'dataset-write.R' 'deprecated.R' 'dictionary.R'\n'dplyr-arrange.R' 'dplyr-collect.R' 'dplyr-count.R'\n'dplyr-distinct.R' 'dplyr-eval.R' 'dplyr-filter.R'\n'dplyr-funcs-conditional.R' 'dplyr-funcs-datetime.R'\n'dplyr-funcs-math.R' 'dplyr-funcs-string.R'\n'dplyr-funcs-type.R' 'expression.R' 'dplyr-funcs.R'\n'dplyr-group-by.R' 'dplyr-join.R' 'dplyr-mutate.R'\n'dplyr-select.R' 'dplyr-summarize.R' 'record-batch.R' 'table.R'\n'dplyr.R' 'duckdb.R' 'feather.R' 'field.R' 'filesystem.R'\n'flight.R' 'install-arrow.R' 'ipc_stream.R' 'json.R'\n'memory-pool.R' 'message.R' 'metadata.R' 'parquet.R' 'python.R'\n'query-engine.R' 'record-batch-reader.R'\n'record-batch-writer.R' 'reexports-bit64.R'\n'reexports-tidyselect.R' 'schema.R' 'util.R'",
         "NeedsCompilation": "yes",
-        "Packaged": "2021-12-29 00:21:42 UTC; runner",
+        "Packaged": "2022-01-17 00:51:42 UTC; runner",
         "Author": "Neal Richardson [aut, cre],\n  Ian Cook [aut],\n  Nic Crane [aut],\n  Jonathan Keane [aut],\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>),\n  Jeroen Ooms [aut],\n  Javier Luraschi [ctb],\n  Karl Dunkle Werner [ctb] (<https://orcid.org/0000-0003-0523-7309>),\n  Jeffrey Wong [ctb],\n  Apache Arrow [aut, cph]",
         "Maintainer": "Neal Richardson <neal@ursalabs.org>",
-        "Built": "R 4.1.1; x86_64-pc-linux-gnu; 2022-01-06 10:53:46 UTC; unix"
+        "Built": "R 4.1.1; x86_64-pc-linux-gnu; 2022-01-17 08:43:01 UTC; unix"
       }
     },
     "assertthat": {
@@ -271,6 +272,34 @@
         "Date/Publication": "2018-12-01 12:30:03 UTC",
         "Encoding": "UTF-8",
         "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-05-19 00:32:10 UTC; unix"
+      }
+    },
+    "cpp11": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/focal/latest",
+      "description": {
+        "Package": "cpp11",
+        "Title": "A C++11 Interface for R's C Interface",
+        "Version": "0.4.2",
+        "Authors@R": "\n    c(person(given = \"Jim\",\n             family = \"Hester\",\n             role = \"aut\",\n             comment = c(ORCID = \"0000-0002-2739-7082\")),\n      person(given = \"Romain\",\n             family = \"François\",\n             role = c(\"aut\", \"cre\"),\n             email = \"romain@rstudio.com\"),\n      person(given = \"Benjamin\",\n             family = \"Kietzman\",\n             role = \"ctb\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
+        "Description": "Provides a header only, C++11 interface to R's C\n    interface.  Compared to other approaches 'cpp11' strives to be safe\n    against long jumps from the C API as well as C++ exceptions, conform\n    to normal R function semantics and supports interaction with 'ALTREP'\n    vectors.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://cpp11.r-lib.org, https://github.com/r-lib/cpp11",
+        "BugReports": "https://github.com/r-lib/cpp11/issues",
+        "Suggests": "bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,\nknitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,\ntestthat, tibble, utils, vctrs, withr",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3",
+        "Config/Needs/cpp11/cpp_register": "brio, cli, decor, desc, glue, tibble,\nvctrs",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.1.2",
+        "SystemRequirements": "C++11",
+        "NeedsCompilation": "no",
+        "Packaged": "2021-11-29 17:26:06 UTC; jhester",
+        "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Romain François [aut, cre],\n  Benjamin Kietzman [ctb],\n  RStudio [cph, fnd]",
+        "Maintainer": "Romain François <romain@rstudio.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2021-11-30 09:10:04 UTC",
+        "Built": "R 4.1.0; ; 2021-12-01 11:02:33 UTC; unix"
       }
     },
     "crayon": {
@@ -502,7 +531,7 @@
         "Type": "Package",
         "Encoding": "UTF-8",
         "Title": "HTTP and WebSocket Server Library",
-        "Version": "1.6.4",
+        "Version": "1.6.5",
         "Authors@R": "c(\n    person(\"Joe\", \"Cheng\", role = c(\"aut\"), email = \"joe@rstudio.com\"),\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(family = \"RStudio, PBC\", role = \"cph\"),\n    person(\"Hector\", \"Corrada Bravo\", role = \"ctb\"),\n    person(\"Jeroen\", \"Ooms\", role = \"ctb\"),\n    person(\"Andrzej\", \"Krzemienski\", role = \"cph\", comment = \"optional.hpp\")\n    )",
         "Copyright": "RStudio, PBC; Joyent, Inc.; Nginx Inc.; Igor Sysoev; Niels\nProvos; Internet Systems Consortium, Inc.; Alexander Chemeris;\nBerkeley Software Design; Google Inc.; Sony Mobile\nCommunications AB; Alexander Peslyak; Free Software Foundation,\nInc.; X Consortium; Ben Noordhuis; StrongLoop, Inc.; Saúl\nIbarra Corretgé; Bert Belder; Fedor Indutny; libuv project;\nRefael Ackermann; Kenneth MacKay; Emergya; Diego Pettenò; xine\nproject, The Regents of the University of California, Dariusz\nDwornikowski",
         "Description": "Provides low-level socket and protocol support for handling\n    HTTP and WebSocket requests directly from within R. It is primarily\n    intended as a building block for other packages, rather than making it\n    particularly easy to create complete web applications using httpuv alone.\n    httpuv is built on top of the libuv and http-parser C libraries, both of\n    which were developed by Joyent, Inc. (See LICENSE file for libuv and\n    http-parser license information.)",
@@ -516,12 +545,12 @@
         "Suggests": "testthat, callr, curl, websocket",
         "Collate": "'RcppExports.R' 'httpuv.R' 'random_port.R' 'server.R'\n'static_paths.R' 'utils.R'",
         "NeedsCompilation": "yes",
-        "Packaged": "2021-12-13 19:41:29 UTC; winston",
+        "Packaged": "2022-01-04 21:27:22 UTC; winston",
         "Author": "Joe Cheng [aut],\n  Winston Chang [aut, cre],\n  RStudio, PBC [cph],\n  Hector Corrada Bravo [ctb],\n  Jeroen Ooms [ctb],\n  Andrzej Krzemienski [cph] (optional.hpp)",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "RSPM",
-        "Date/Publication": "2021-12-14 14:20:14 UTC",
-        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2021-12-15 19:15:52 UTC; unix"
+        "Date/Publication": "2022-01-05 00:40:11 UTC",
+        "Built": "R 4.1.0; x86_64-pc-linux-gnu; 2022-01-06 23:13:25 UTC; unix"
       }
     },
     "jquerylib": {
@@ -997,121 +1026,13 @@
   },
   "files": {
     ".Rprofile": {
-      "checksum": "192acee2f5c4d0dc0c8caaafa0acc879"
+      "checksum": "33b0aedf3d5d9d67be9a8821cb3ea163"
     },
     "app.R": {
-      "checksum": "1182f5cf5e4c37df1d2d57250609c33e"
+      "checksum": "b81f06ea2ff172bb2130fbba6664f8e2"
     },
-    "packrat/desc/arrow": {
-      "checksum": "b28b3a55d3bcf0f76d0fd6c28a9d5026"
-    },
-    "packrat/desc/assertthat": {
-      "checksum": "ba66afbb4eceea4d4f811c1c8ae789f8"
-    },
-    "packrat/desc/base64enc": {
-      "checksum": "b04974bcf7bdad8e48d938110bdc1ea7"
-    },
-    "packrat/desc/bit": {
-      "checksum": "34e549d15c581b8ed7bc35655cf805ed"
-    },
-    "packrat/desc/bit64": {
-      "checksum": "0fb94ae1b683df90c3807021357a8702"
-    },
-    "packrat/desc/bslib": {
-      "checksum": "90cba5c86715b5c95b35164a3fea9423"
-    },
-    "packrat/desc/cachem": {
-      "checksum": "b38a16f41e7d01591d1ec38392ff051e"
-    },
-    "packrat/desc/commonmark": {
-      "checksum": "b8ad3df9fe997eb55a726587adf9d7cf"
-    },
-    "packrat/desc/crayon": {
-      "checksum": "3ab304583e5b8e81b8dc93980ae21f13"
-    },
-    "packrat/desc/digest": {
-      "checksum": "ad643b6c093b9024ad491b09910d438a"
-    },
-    "packrat/desc/ellipsis": {
-      "checksum": "f02cf12a60501cbe88a8d301b51b37d3"
-    },
-    "packrat/desc/fastmap": {
-      "checksum": "d805f06448c23cebf5a45845bbc3c54b"
-    },
-    "packrat/desc/fontawesome": {
-      "checksum": "7c3ea3349bf41a6bd6b3fd630065dd36"
-    },
-    "packrat/desc/fs": {
-      "checksum": "f8f2d929314de92cacddf57233fd1f8b"
-    },
-    "packrat/desc/glue": {
-      "checksum": "3582dd7aa813c091c8a08862b00a5525"
-    },
-    "packrat/desc/htmltools": {
-      "checksum": "191fb18536d9569759461106a8f64543"
-    },
-    "packrat/desc/httpuv": {
-      "checksum": "fb6eeb635764ba15ceca83a823ec3ec6"
-    },
-    "packrat/desc/jquerylib": {
-      "checksum": "e54764745b7a2f91177e1211a7bb17e4"
-    },
-    "packrat/desc/jsonlite": {
-      "checksum": "c1d3d14d5869d8c0616a5574dd6fd626"
-    },
-    "packrat/desc/later": {
-      "checksum": "c51762bce7dadeb12e2c2d35a58c7047"
-    },
-    "packrat/desc/lifecycle": {
-      "checksum": "0ce3c7ebab6dc6898ad7db1ef338afa4"
-    },
-    "packrat/desc/magrittr": {
-      "checksum": "e9e392744404fd4c3dcc39d043f3503c"
-    },
-    "packrat/desc/mime": {
-      "checksum": "c5fb97ba7267e4da14ecdf78c802fcea"
-    },
-    "packrat/desc/promises": {
-      "checksum": "44cbf25ad7baeee9235e08d20cb09543"
-    },
-    "packrat/desc/purrr": {
-      "checksum": "cce100fe660b349c5b4a9643f1d6f1f9"
-    },
-    "packrat/desc/R6": {
-      "checksum": "404883ca10ecd58f329d27520422b196"
-    },
-    "packrat/desc/rappdirs": {
-      "checksum": "b8bfd3960443e1dad456aaf4f0fbf7a3"
-    },
-    "packrat/desc/Rcpp": {
-      "checksum": "8a0b06fd2e053bf0c422ab9099251ff8"
-    },
-    "packrat/desc/rlang": {
-      "checksum": "d1e459908afc2c1c97d745f1a626d39b"
-    },
-    "packrat/desc/sass": {
-      "checksum": "7b073244e61911a5c5862a134abb84d8"
-    },
-    "packrat/desc/shiny": {
-      "checksum": "c125e8c22802f528bdf3f0832abebf4c"
-    },
-    "packrat/desc/sourcetools": {
-      "checksum": "46ce5cc3883adeb6110fdcffb280455b"
-    },
-    "packrat/desc/tidyselect": {
-      "checksum": "3b886c7700c7d0519caf9864c0499a87"
-    },
-    "packrat/desc/vctrs": {
-      "checksum": "dfae457436e92fe0546776e3385728b6"
-    },
-    "packrat/desc/withr": {
-      "checksum": "5f30f2cca013e81770d95f575c78e0f9"
-    },
-    "packrat/desc/xtable": {
-      "checksum": "6b121fa06bd99237e4fff505a40aacb4"
-    },
-    "packrat/packrat.lock": {
-      "checksum": "6b76703e8d91dfba23732b5fd5c962bc"
+    "README.md": {
+      "checksum": "7ecd63bd4a557428302070b38d3b5d8d"
     }
   },
   "users": null
