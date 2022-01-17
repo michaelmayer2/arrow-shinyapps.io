@@ -13,4 +13,11 @@ Use [this link](https://ursalabs.org/arrow-r-nightly/articles/install.html#insta
 
 Then, before publishing, it is helpful to use
 
-`rsconnect::writeManifest`
+```
+r<-options()$repos
+r["AWS"]<-"https://arrow-r-nightly.s3.amazonaws.com"
+options(repos=r)
+rsconnect::writeManifest()
+```
+
+to ensure that shinyapps.io can find the nightly build again. 
