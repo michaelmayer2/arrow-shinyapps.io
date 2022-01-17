@@ -62,8 +62,8 @@
       }
     },
     "arrow": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.rstudio.com/cran/__linux__/focal/latest",
+      "Source": "AWS",
+      "Repository": "https://arrow-r-nightly.s3.amazonaws.com",
       "description": {
         "Package": "arrow",
         "Title": "Integration to 'Apache' 'Arrow'",
@@ -90,7 +90,7 @@
         "Packaged": "2022-01-17 00:51:42 UTC; runner",
         "Author": "Neal Richardson [aut, cre],\n  Ian Cook [aut],\n  Nic Crane [aut],\n  Jonathan Keane [aut],\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>),\n  Jeroen Ooms [aut],\n  Javier Luraschi [ctb],\n  Karl Dunkle Werner [ctb] (<https://orcid.org/0000-0003-0523-7309>),\n  Jeffrey Wong [ctb],\n  Apache Arrow [aut, cph]",
         "Maintainer": "Neal Richardson <neal@ursalabs.org>",
-        "Built": "R 4.1.1; x86_64-pc-linux-gnu; 2022-01-17 08:43:01 UTC; unix"
+        "Built": "R 4.1.1; x86_64-pc-linux-gnu; 2022-01-17 10:15:02 UTC; unix"
       }
     },
     "assertthat": {
@@ -1026,7 +1026,7 @@
   },
   "files": {
     ".Rprofile": {
-      "checksum": "33b0aedf3d5d9d67be9a8821cb3ea163"
+      "checksum": "31ccf98093f3bae996a9fe96721a2b5e"
     },
     "app.R": {
       "checksum": "b81f06ea2ff172bb2130fbba6664f8e2"

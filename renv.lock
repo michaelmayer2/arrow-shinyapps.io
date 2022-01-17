@@ -25,6 +25,10 @@
       {
         "Name": "BioCbooks",
         "URL": "https://packagemanager.rstudio.com/bioconductor/packages/3.14/books"
+      },
+      {
+        "Name": "AWS",
+        "URL": "https://arrow-r-nightly.s3.amazonaws.com"
       }
     ]
   },
@@ -49,7 +53,7 @@
       "Package": "arrow",
       "Version": "6.0.1.20220116",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "AWS",
       "Hash": "a5b6ab7dc3bb791683a50f8f13866ac8",
       "Requirements": [
         "R6",
