@@ -3,7 +3,7 @@ Example on how to get the latest arrow version onto shinyapps.io
 
 ## Instructions
 
-Simply publish the app here against [shinapps.io](https://shinyapps.io)
+Simply publish the app here against [shinyapps.io](https://shinyapps.io)
 
 ## Making use of snappy compression in your own app
 
